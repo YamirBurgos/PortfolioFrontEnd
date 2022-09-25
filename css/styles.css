@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #212121;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.brand{
+    margin-top: -7px;
+}
+.brand span{
+    color: crimson;
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.menu .active{
+    color: crimson;
+}
+.menu a:hover{
+    background-color: crimson;
+    color: #fff;
+    transition: ease-in .4s;
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+span{
+    color: crimson;
+}
+.download_cv{
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold ;
+    text-align: center;
+}
+.download_cv:hover{
+    background-color: crimson;
+    color: white;
+    align-self: center;
+    box-shadow: none;
+    transition: ease-in .2s;
+}
+.main img{
+    width: 450px;
+    border: 7px solid crimson;
+    height: 400px;
+    border-radius: 6em;
+}
+.about{
+    display:grid;
+    width: 100vw;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+}
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+.about-info h2{
+    font-size: 2.5em;
+    color: #212121;
+}
+.about p{
+    margin-bottom: 1em;
+}
+
+.portfolio{    
+    width: 100vw;
+    background-color: #212121;
+    color: #fff;
+}
+.portfolio-headings{
+    width: 100vw;
+    padding: 5em;
+}
+.portfolio-headings h2{
+    font-size: 2.5em;
+}
+.portfolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    height: 350px;
+    color: #fff;
+    background-color: #271868;
+}
+.card_img{
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/2-original.png);
+    background-size: cover;
+}
+.card_title{
+    padding: 20px;
+    text-align: center;
+}
+.card-projects-links{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card-projects-links a{
+    color: white;
+    text-decoration: none;
+}
+.card-projects-links i{
+    font-size: 2em;
+}
+
+.button-content{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.project-details-button a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.card .project-details{
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+}
+
+.card .project-details a{
+    text-decoration: none;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.proyect-details-content{
+    display: flexbox;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+.contact-section{
+    background-color: #212121;
+}
+.skills{    
+    width: 100vw;
+    background-color: #212121;
+    color: #fff;
+}
+.logos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.logo-javascript{
+    height: 300px;
+    display: flex;    
+    border: solid 5px white;
+    margin: 5px;
+    border-radius: 1em;
+}
+.logo-javascript:hover{
+    background-color: white;
+    color: #212121;
+    transition: ease-in .4s;    
+    border-radius: 10em;
+}
+.logo-html{
+    height: 300px;
+    display: flex;
+    border: solid 5px white;
+    margin: 5px;
+    border-radius: 1em;
+}
+.logo-html:hover{
+    background-color: white;
+    color: #212121;
+    transition: ease-in .4s;    
+    border-radius: 10em;
+}
+.logo-css{
+    height: 300px;
+    display: flex;
+    border: solid 5px white;
+    margin: 5px;    
+    border-radius: 1em;
+}
+.logo-css:hover{
+    background-color: white;
+    color: #212121;
+    transition: ease-in .4s;
+    border-radius: 10em
+}
+.container-contact{
+    width: 100vw;
+    background-color: #212121;
+    color: #fff;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+.contact-form{
+    background-color: #212121;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form form{
+    align-self: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+.contact-form input{
+    height: 3em;
+    width: 40em;
+    margin: 3px;
+    border: 2px solid crimson;
+}
+.contact-form textarea{
+    height: 10em;
+    width: 40em;
+    margin: 3px;
+    border: 2px solid crimson;
+    text-align: left;    
+    border-radius: 10px;
+}
+.contact-form button{
+    width: 20em;
+    height: 3em;
+    margin: 3px;
+    border-radius: 10px;
+}
+.contact-form button:hover{
+    border: 5px solid crimson;
+    border-radius: 10em;
+    transition: ease-in .4s;
+    cursor: pointer;
+}
+.contact-form h4{
+    color: #fff;
+}
+.menuinferior{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #212121;
+}
+.menuinferior li{
+    list-style: none;
+    align-content: flex-end;
+    margin: 10px;
+}
+.menuinferior a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.menuinferior .active{
+    color: crimson;
+}
+.menuinferior a:hover{
+    border-radius: 10px;
+    color: crimson;
+    transition: ease-in .4s;
+}
+.menuinferior i{
+    font-size: 2em;
+}
